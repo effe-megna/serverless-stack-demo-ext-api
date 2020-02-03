@@ -1,10 +1,10 @@
 import { success } from "../../libs/response-lib";
-import { a } from "../../commons/index"
+import { a } from "../../commons/index";
 
 export async function main(event, context) {
   return success({
     hello: a
-  })
+  });
   // const params = {
   //   TableName: "ext-notes",
   //   // 'KeyConditionExpression' defines the condition for the query
