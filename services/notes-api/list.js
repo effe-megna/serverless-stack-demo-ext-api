@@ -1,9 +1,9 @@
-import * as dynamoDbLib from "../../libs/dynamodb-lib";
-import { success, failure } from "../../libs/response-lib";
+import { success } from "../../libs/response-lib";
+import { a } from "../../commons/index"
 
 export async function main(event, context) {
   return success({
-    hello: "world!"
+    hello: a
   })
   // const params = {
   //   TableName: "ext-notes",
