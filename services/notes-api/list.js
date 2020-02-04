@@ -1,5 +1,4 @@
 import { success } from "../../libs/response-lib";
-import { a } from "../../commons/index";
 import S from "sanctuary";
 
 export async function main(event, context) {
