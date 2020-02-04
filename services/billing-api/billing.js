@@ -3,6 +3,7 @@ import stripePackage from "stripe";
 import { calculateCost } from "./libs/billing-lib";
 import { success, failure } from "../../libs/response-lib";
 import config from "../../config";
+import { a } from "../../commons/index";
 
 // Load our secret key from SSM
 const ssm = new AWS.SSM();
@@ -12,6 +13,8 @@ const stripeSecretKeyPromise = ssm
     WithDecryption: true
   })
   .promise();
+
+console.log(a);
 
 export async function main(event, context) {
   const { storage, source } = JSON.parse(event.body);
